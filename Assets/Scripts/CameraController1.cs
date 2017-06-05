@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour {
+public class CameraController1 : MonoBehaviour {
 
     public GameObject player;
+
     private Vector3 offset;
 
-	// Use this for initialization
-	void Start () {
+    void Start()
+    {
         offset = transform.position - player.transform.position;
-	}
-	
-	// make sure that the player camera is updated after everything
-	void LateUpdate () {
+    }
+
+    void LateUpdate()
+    {
         transform.position = player.transform.position + offset;
-	}
+    }
 }
