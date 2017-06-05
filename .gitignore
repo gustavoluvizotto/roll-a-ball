@@ -1,4 +1,7 @@
 .vs/*
 Temp/*
+obj/*
 Library/*.log
 *.log
+*.info
+*.bin
